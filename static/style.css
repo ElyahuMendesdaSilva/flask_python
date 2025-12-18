@@ -1,0 +1,228 @@
+:root {
+    --border-color: #657786;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-main {
+    width: 250px;
+    height: 100%;
+    border-right: solid var(--border-color) 0.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-main {
+    width: calc(100% - 650px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-right{
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-div-header {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+nav {
+    width: 100%;
+    height: 290px;
+    display: flex;
+    padding: 1rem;
+}
+
+.nav-div-header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+}
+
+.nav-div-header ul li {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: left;
+    cursor: pointer;
+    padding-left: 1rem;
+}
+
+ul li:hover {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+}
+
+.nav-div-header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    background-color: transparent;
+}
+
+.nav-div-header ul li svg {
+    margin-right: 1rem;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+}
+
+.div-bottom-header-main{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.div-bottom-header-main button {
+    width: 90%;
+    height: 70%;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    color: black;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.div-profile-header-main{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-profile {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+    border-radius: 8px;
+    gap: 10px;
+}
+
+.nav-top-section-section-main{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid rgb(174, 174, 174) 0.5px;
+}
+
+.nav-top-section-section-main label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top:28px;
+}
+
+.div-nav-top{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-line-nav-label-section-section-main{
+    width: 90%;
+    align-self: center;
+    height: 5px;
+    border-radius: 2px;
+    background-color: blue;
+}
+
+.section-main-content-social{
+    width: 100%;
+    height: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    overflow-y: auto;
+    border-right: solid var(--border-color) 0.5px;
+}
+
+.section-right-div-form{
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-right-div-form form {
+    width: 300px;
+    height: 80%;
+    display: flex;
+    border: solid var(--border-color) 0.5px;
+    align-items: center;
+    border-radius: 20px;
+    padding-left: 10px;
+    gap: 10px;
+}
+
+.section-right-div-form form input {
+    width: calc(100% - 50px);
+    height: 100%;
+    border: none;
+    color: #ffffff;
+    font-size: 1rem;
+    border-left: none;
+    border-right: 25px;
+}
+
+.section-right-div-form form svg {
+    fill: rgb(150, 150, 150);
+}
